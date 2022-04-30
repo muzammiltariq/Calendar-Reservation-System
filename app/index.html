@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body ng-app="myApp">
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="app.js"></script>
+
+  <h1>Calendar Reservation System</h1>
+  <calendar selected="day"></calendar>
+  <span>
+		<input type="text" ng-model="temp" placeholder="Tennant Name">
+    	<button ng-click="senddata_reserve()">Confirm Stay</button>
+		<button ng-click="senddata_unreserve()">Cancel Stay</button>
+		<p>Selected date: <b>{{day.format('MMMM D')}}</b></p>
+	</span>
+</body>
+</html>
